@@ -107,7 +107,12 @@ function createTmplTestsNodes(config) {
             },
             bemhtml : {
                 tech : 'enb-bemxjst/techs/bemhtml',
-                options : { sourceSuffixes : ['bemhtml', 'bemhtml.js'] }
+                options : {
+                    sourceSuffixes : ['bemhtml', 'bemhtml.js'],
+                    engineOptions : {
+                        xhtml : true
+                    }
+                }
             }
         }
     });

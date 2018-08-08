@@ -6,9 +6,9 @@
     "Vladimir Varankin <nek.narqo@gmail.com> (http://github.com/narqo)"
   ],
   "dependencies": {
-    "bem-components": "^5.0.0"
+    "bem-components": "^6.0.1"
   },
   "devDependencies": {
-    "bem-pr": "~0.10.0"
+    "bem-pr": "~0.15.0"
   }
 }
