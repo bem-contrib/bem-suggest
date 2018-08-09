@@ -27,6 +27,5 @@
     "jscs": "^2.9.0",
     "jscs-bem": "^0.2.0",
     "mkdirp": "^0.5.1"
-  },
-  "private": true
+  }
 }
