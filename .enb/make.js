@@ -59,7 +59,7 @@ function createTestsNodes(config) {
                 [bemhtml, {
                     target : '?.browser.tmpl.js',
                     filesTarget : '?.tmpl.files',
-                    sourceSuffixes : ['bemhtml', 'bemhtml.js']
+                    sourceSuffixes : ['bemhtml.js']
                 }] :
                 [bhBundle, {
                     target : '?.browser.tmpl.js',
@@ -107,7 +107,12 @@ function createTmplTestsNodes(config) {
             },
             bemhtml : {
                 tech : 'enb-bemxjst/techs/bemhtml',
-                options : { sourceSuffixes : ['bemhtml', 'bemhtml.js'] }
+                options : {
+                    sourceSuffixes : ['bemhtml.js'],
+                    engineOptions : {
+                        xhtml : true
+                    }
+                }
             }
         }
     });
