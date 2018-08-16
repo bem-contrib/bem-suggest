@@ -3,7 +3,12 @@ block('suggest')(
         return applyNext({ _suggest : this.ctx });
     }),
 
-    js()(true),
+    js()(function() {
+        var prevJs = applyNext(),
+            js = true;
+
+        return applyNext() ? this.extend(prevJs, js) : js;
+    }),
 
     content()(function() {
         var mods = this.mods,
