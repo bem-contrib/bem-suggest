@@ -4,10 +4,7 @@ block('suggest')(
     }),
 
     js()(function() {
-        var prevJs = applyNext(),
-            js = true;
-
-        return applyNext() ? this.extend(prevJs, js) : js;
+        return applyNext() || true;
     }),
 
     content()(function() {
