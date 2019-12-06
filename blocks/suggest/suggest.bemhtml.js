@@ -23,6 +23,7 @@ block('suggest')(
                     target : 'anchor',
                     autoclosable : true
                 },
+                mix : this._suggest.popupMix,
                 // FIXME: https://github.com/bem/bem-components/issues/1745
                 attrs : { 'aria-hidden' : 'true' },
                 directions : ['bottom-left', 'bottom-right', 'top-left', 'top-right'],
