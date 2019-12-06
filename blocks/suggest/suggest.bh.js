@@ -19,6 +19,7 @@ module.exports = function(bh) {
                         target : 'anchor',
                         autoclosable : true
                     },
+                    mix : json.popupMix,
                     directions : ['bottom-left', 'bottom-right', 'top-left', 'top-right'],
                     content : {
                         block : json.block,
